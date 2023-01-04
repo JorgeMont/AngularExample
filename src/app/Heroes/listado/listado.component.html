@@ -1,0 +1,13 @@
+<h2>Listado</h2>
+<ul>
+    <!-- <li>{{heroes[0]}}</li> -->
+    <li *ngFor="let heroe of heroes">
+        {{heroe}}
+    </li>
+</ul>
+
+<div *ngIf="heroeBorrado">
+    <span>{{heroeBorrado}}</span>
+</div>
+
+<button (click)="borrarUltimoHeroe()">Borrar ultimo heroe</button>
